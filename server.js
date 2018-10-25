@@ -48,7 +48,7 @@ var config = require('./config.js');
 
 
  mongoose.Promise = global.Promise;
- const connection = mongoose.connect('mongodb+srv://fernando:654321aA@cluster0-sejql.gcp.mongodb.net/movies?retryWrites=true', { useNewUrlParser: true });
+ const connection = mongoose.connect('mongodb+srv://fernando:654321aA@cluster0-sejql.gcp.mongodb.net/testedb?retryWrites=true', { useNewUrlParser: true });
 
  var server = app.listen(config.port, () => {
 	 console.log('Listening on ' + server.address().port);
